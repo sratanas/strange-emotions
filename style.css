@@ -1,0 +1,336 @@
+body, html {
+    background-color: rgb(59, 59, 59);
+    animation: wowzaBg 5s;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+
+}
+
+#secondBody {
+
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url('glittergold.jpg');
+    background-size: cover;
+    animation-name: slideInGlitter;
+    -webkit-animation-name: slideInGlitter;
+    animation-delay: 10s;	
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+    visibility: hidden;
+    animation: 4s linear 7s forwards slideInGlitter ;
+}
+
+
+@keyframes slideInGlitter {
+
+	0% {
+        transform: translateY(-100%);
+        visibility: visible;
+
+    }		
+	100% {
+        transform: translateY(0%);
+        visibility: visible;
+
+	}		
+}
+
+#hello{
+    border-radius: 100%;
+    background-color: rgb(243, 35, 70);
+    vertical-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    -webkit-animation: greencircle 5s infinite; /* Safari 4.0 - 8.0 */
+    animation-delay: 7s;
+    animation: greencircle 10s 1;
+    animation-direction: alternate;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes greencircle {
+    from {left: -500px;}
+    to {left: 1500px;}
+}
+
+/* Standard syntax */
+@keyframes greencircle {
+    from {left: -500px;}
+    to {left: 1500px;}
+}
+
+#slide {
+    position: relative;
+    left: -500px;
+    font-size:72px;
+    font-family: Arial;
+    color: white;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0s;
+    letter-spacing: 10px;
+}
+
+@-webkit-keyframes slide {
+    from { left: 0; }
+    to {left: 200px}
+}
+
+@keyframes slide {
+    from { left: 0; }
+    to {left: 200px}
+}
+
+#toThe {
+    position: relative;
+    left: -500px;
+    font-size:72px;
+    font-family: Arial;
+    color: white;
+    -webkit-animation: slide .5s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slide .5s forwards;
+    animation-delay: 1s;
+    letter-spacing: 10px;
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+#party {
+    position: relative;
+    left: 1500px;
+    font-size:72px;
+    font-family: Arial;
+    color: white;
+    -webkit-animation: party 0.5s forwards;
+    -webkit-animation-delay: 4s;
+    animation: party 0.5s forwards;
+    animation-delay: 2s;
+    letter-spacing: 10px;
+}
+
+@-webkit-keyframes party {
+    from { right: 1500; }
+    to {left: 200px}
+}
+
+@keyframes party {
+    from { right: 1500; }
+    to {left: 200px}
+}
+
+#helloContainer{
+    animation:  spin 3s;
+    animation-delay: 0s;
+    visibility: hidden;
+    
+
+}
+
+@keyframes wowzaBg {
+    0%   {background: rgb(255, 0, 200);}
+    25%  {background: yellow;}
+    50%  {background: rgb(0, 255, 21);}
+    75%  {background: rgb(12, 245, 233);}
+    100% {background: rgb(0, 17, 255);}
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg);
+        visibility: visible;
+    } to { 
+        transform: rotate(360deg); 
+        visibility: visible;
+    }
+}
+
+
+#helloInsideContainer{
+    visibility: visible;
+    position: relative;
+    -webkit-animation-name: slideDownAway; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: slideDownAway;
+    animation-duration: 4s;
+    animation-delay: 7.35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideDownAway {
+    0% {
+    transform: translateY(0%);
+    visibility: visible;
+
+    }
+			
+    100% {
+    transform: translateY(200%);
+    visibility: hidden;
+
+    }		
+}
+
+#how {
+    font-size: 400px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    animation: blinkHow 2s;
+    animation-delay: 12s;
+    text-align: center;
+    margin-top:90px !important;
+    margin: auto;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url('sky-01.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#are {
+    font-size: 400px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    animation: blinkHow 2s;
+    animation-delay: 14s;
+    text-align: center;
+    margin-top:90px !important;
+    margin: auto;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url('sky-01.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#you {
+    font-size: 400px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    animation: blinkHow 2s;
+    animation-delay: 16s;
+    text-align: center;
+    margin-top:90px !important;
+    margin: auto;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url('sky-01.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#question {
+    font-size: 400px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    animation: blinkHow 2s;
+    animation-delay: 18s;
+    text-align: center;
+    margin: auto;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url('sky-01.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes blinkHow {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility:hidden;
+    }
+}
+
+.inner {
+    position: absolute;
+    float: left;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+#hi1 {
+    font-size: 100px;
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+    color: rgb(12, 171, 219);
+    animation: blinkHow 2s;
+    animation-delay: 19s;
+    position: absolute;
+    left:200px;
+    visibility: hidden;
+}
+
+#bye1 {
+    font-size: 100px;
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+    color: rgb(12, 171, 219);
+    animation: squish 4s;
+    animation-delay: 21s;
+    position: absolute;
+    left:100px;
+    visibility: hidden;
+}
+
+
+
+@keyframes blinkHi {
+    0% {
+
+        }
+    2% {
+        visibility:visible;
+    }
+    100% {
+        visibility:hidden;
+    }
+}
+
+
+
+@keyframes squish {
+    
+    0% {transform: scaleY(0); 
+        }
+    2% {
+        transform: scaleY(1.0);
+        visibility:visible;
+    }
+    50% {transform: scaleY(.5); }
+    100% {transform: scaleY(0); }
+     
+}
